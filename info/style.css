@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    user-select: none;
+    cursor: none;
+    /*
+    cursor: url("https://downloads.totallyfreecursors.com/cursor_files/leaf.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/leaf.gif"), auto;
+    */
+  }
+
+
+  a {
+    background-color: transparent;
+    color: white;
+}
+
+a:hover {
+    color: #ff0000;
+    
+}
+
+a:active {
+    color: #00ff00;
+}
+
+
+  body {
+    /*background-color: black;*/
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+p{
+    position: absolute;
+    left: 3vw;
+    padding-top: 3vw;
+    width: 60%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+:root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+  z-index: 100;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 12vmax at var(--cursorX) var(--cursorY),
+    rgba(123,204,112,1) 10%,
+    rgba(123,204,112,0.8) 60%,
+    rgba(255, 255, 255, 0.95) 100%
+  )
+}
